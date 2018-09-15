@@ -25,8 +25,9 @@ Les inconvéniants sont que le circuit est plus compliqué. Il sera dur à mettr
 2) Pas de L293d, mais de simples transistors pour actionner indépendemment les moteurs (sans possibilité de faire de marche arrière)
 
 ## Circuit avec L 293D:
-Attention, ce circuit n'a pour le moment pas été testter
-![Circuit avec composant L293D](electronics/robot-avec-l293d_schéma.svg "Circuit avec composant L293D")
+Attention, ce circuit n'a pour le moment pas été testé
+
+![Circuit avec composant L293D](electronics/robot-avec-l293d_schéma.svg?raw=true "Circuit avec composant L293D")
 
 ## Circuit avec transistors
 
