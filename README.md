@@ -26,8 +26,8 @@ Les inconvéniants sont que le circuit est plus compliqué. Il sera dur à mettr
 
 ## Circuit avec L 293D:
 Attention, ce circuit n'a pour le moment pas été testé
-robot-avec-l293d-schema.svg
-![Circuit avec composant L293D](https://git.ventresmous.fr/VentresMous/lineFollowerBot/raw/master/electronics/robot-avec-l293d-schema.svg "Circuit avec composant L293D")
+
+<img src="https://git.ventresmous.fr/VentresMous/lineFollowerBot/raw/master/electronics/robot-avec-l293d-schema.svg"/>
 
 ## Circuit avec transistors
 
