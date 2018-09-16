@@ -31,7 +31,9 @@ Attention, ce circuit n'a pour le moment pas été testé
 
 ## Circuit avec transistors
 
-TO DO
+Attention, ce circuit n'a pour le moment pas été testé
+
+![Circuit avec transistors](electronics/robot-avec-transistors.svg "Avec transistors")
 
 
 ## TO do:
