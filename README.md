@@ -27,13 +27,13 @@ Les inconvéniants sont que le circuit est plus compliqué. Il sera dur à mettr
 ## Circuit avec L 293D:
 Attention, ce circuit n'a pour le moment pas été testé
 
-![Circuit avec composant L293D](electronics/robot-avec-l293d-schema.svg "Circuit avec composant L293D")
+![Circuit avec composant L293D](electronics/robot-avec-l293d_schema.png "Circuit avec composant L293D")
 
 ## Circuit avec transistors
 
 Attention, ce circuit n'a pour le moment pas été testé
 
-![Circuit avec transistors](electronics/robot-avec-transistors.svg "Avec transistors")
+![Circuit avec transistors](electronics/robot-plus simple_schema.png "Avec transistors")
 
 
 ## TO do:
