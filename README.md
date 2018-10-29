@@ -43,3 +43,9 @@ Attention, ce circuit n'a pour le moment pas été testé
 * Réaliser le prototype BOB-1 tout en prenant des photo etc... afin d'écrire la notice de montage.
 * Ecrire le firmware arduino du robot.
 * Organiser l'évènement.
+
+## Chassis
+
+Voir fichiers Openscad et DXF dans le dossier chassis
+
+![Chassis](chassis/chassis.png "Avec transistors")
