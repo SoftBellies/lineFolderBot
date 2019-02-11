@@ -50,11 +50,16 @@ int seuil_droite = 200;
 // Son rôle consiste à configurer l’Arduino pour un usage précis, dans le cas
 // présent pour un robot suiveur de ligne.
 void setup() {
-  // Configure les broches des moteurs en sortie numérique.
+  // Configure les broches des moteurs en sortie numérique. Ces broches seront
+  // soit à 0 volt, soit à 5 volts. Les broches de l’Arduino ne sont pas faites
+  // pour alimenter un moteur, elles serviront à piloter des transistors qui,
+  // eux, alimenteront les moteurs.
   pinMode(MOTEUR_GAUCHE, OUTPUT);
   pinMode(MOTEUR_DROITE, OUTPUT);
 
   // Configure les broches des leds de suivi d’étalonnage en sortie numérique.
+  // Les leds consomment très peu d’énergie, elles seront directement pilotées
+  // par les broches de l’Arduino.
   pinMode(ETALONNAGE_LED_GAUCHE, OUTPUT);
   pinMode(ETALONNAGE_LED_DROITE, OUTPUT);
 
@@ -73,6 +78,10 @@ void setup() {
 
 // Attend jusqu’à ce que le bouton d’étalonnage soit enfoncé ou relaché.
 // Le paramètre etat peut prendre 2 valeurs : BOUTON_PRESSE et BOUTON_RELEVE.
+// Si la fonction est appelée avec BOUTON_PRESSE, elle ne laissera le programme
+// continuer que si le bouton est enfoncé. Si elle est appelée avec
+// BOUTON_RELEVE, elle ne laissera le programme continuer que si le bouton est
+// relevé.
 void continuer_si(int etat) {
   while(digitalRead(ETALONNAGE_BOUTON) != etat) delay(1);
 }
@@ -92,14 +101,14 @@ void clignoter() {
     digitalWrite(ETALONNAGE_LED_GAUCHE, HIGH);
     digitalWrite(ETALONNAGE_LED_DROITE, HIGH);
 
-    // Attend 0,2 secondes.
+    // Attend 0,2 secondes (200 millisecondes).
     delay(200);
 
     // Éteint les leds d’étalonnage (les broches sont réglées à 0 volt).
     digitalWrite(ETALONNAGE_LED_GAUCHE, LOW);
     digitalWrite(ETALONNAGE_LED_DROITE, LOW);
 
-    // Attend 0,2 secondes.
+    // Attend 0,2 secondes (200 millisecondes).
     delay(200);
   }
 }
@@ -120,7 +129,8 @@ void eteindre() {
 // Étalonne les capteurs pour établir la différence entre la ligne et le sol.
 void etalonnage() {
   // Variables qui vont recevoir les valeurs minimales et maximales des capteurs
-  // gauche et droite. L’unité importe peu.
+  // gauche et droite (L’unité importe peu). Elles permettent de garder en
+  // mémoire l’état du capteur afin de pouvoir effectuer des calculs plus tard.
   int min_gauche;
   int min_droite;
   int max_gauche;
@@ -196,7 +206,9 @@ void moteur_avance() {
 //
 // =============================================================================
 
-// La fonction loop est appelée en boucle par l’Arduino.
+// La fonction loop est appelée en boucle par l’Arduino. Un Arduino est prévu
+// pour ce genre de tâche : exclusive et répétitive.
+// Le programme considère que le robot démarre la ligne entre les deux capteurs.
 void loop() {
   // Variables qui vont recevoir les valeurs des capteurs.
   int valeur_gauche;
@@ -216,7 +228,9 @@ void loop() {
   }
 
   // Tourne à droite si le capteur de gauche identifie le sol et le capteur de
-  // droite identifie la ligne.
+  // droite identifie la ligne. Cela veut dire que le robot dévie à gauche par
+  // rapport à la ligne qu’il doit suivre. On corrige en tournant à droite
+  // jusqu’à ce que la ligne soit à nouveau entre les deux capteurs.
   if((valeur_gauche < seuil_gauche) && (valeur_droite > seuil_droite)) {
     moteur_droite();
 
@@ -227,7 +241,9 @@ void loop() {
   }
 
   // Tourne à gauche si le capteur de gauche identifie la ligne et le capteur de
-  // droite identifie le sol.
+  // droite identifie le sol. Cela veut dire que le robot dévie à droite par
+  // rapport à la ligne qu’il doit suivre. On corrige en tournant à gauche
+  // jusqu’à ce que la ligne soit à nouveau entre les deux capteurs.
   if((valeur_gauche > seuil_gauche) && (valeur_droite < seuil_droite)) {
     moteur_gauche();
 
