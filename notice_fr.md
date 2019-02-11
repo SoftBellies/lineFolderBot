@@ -18,15 +18,15 @@ Le robot dérive donc vers la droite de la ligne. Il faut le faire tourner à ga
 
 ### Actionner les moteurs en fonction des valeurs du capteur.
 
-## Présentation de l'arduino
+#### Présentation de l'arduino
 
-## Lecture d'une valeur
+#### Lecture d'une valeur
 
-## déclenchement d'un moteur
+#### déclenchement d'un moteur
 
 
-### Fabriquer le robot
+## Fabriquer le robot
 
-## Souder et desouder
+### Souder et desouder
 
-## Créer le circuit
+### Créer le circuit
