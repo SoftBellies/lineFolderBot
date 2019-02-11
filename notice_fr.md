@@ -4,8 +4,7 @@
 
 ### Détection de la ligne
 
-
-  
+![schema de principe](doc/principe.png)
 
 ### Mise en circuit
 
