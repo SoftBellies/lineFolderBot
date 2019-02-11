@@ -16,9 +16,17 @@ Sur le schéma ci dessus la lecture des valeurs des photorésistances permettrai
 
 Le robot dérive donc vers la droite de la ligne. Il faut le faire tourner à gauche
 
-### Mise en circuit
+### Actionner les moteurs en fonction des valeurs du capteur.
+
+## Présentation de l'arduino
+
+## Lecture d'une valeur
+
+## déclenchement d'un moteur
 
 
-## Comment on soude
+### Fabriquer le robot
 
-## Comment on désoude
+## Souder et desouder
+
+## Créer le circuit
