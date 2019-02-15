@@ -24,9 +24,11 @@ Le robot dérive donc vers la droite de la ligne. Il faut le faire tourner à ga
 
 L'arduino est un circuit électronique programmable pouvant "lire des valeurs" via certaines pins, et déclencher des courants électriques via d'autres pins.
 
-On va grâce à cette carte pouvoir "lire" les valeurs des capteurs de luminosité, et notre programme, en fonction de ces valeurs actionnera ou non l'envoi d'une tension électrique dans les moteurs.
+Grâce à cette carte pouvoir "lire" les valeurs des capteurs de luminosité, et notre programme, en fonction de ces valeurs actionnera ou non l'envoi d'une tension électrique dans les moteurs.
 
 #### Lecture d'une valeur
+
+
 
 #### déclenchement d'un moteur
 
