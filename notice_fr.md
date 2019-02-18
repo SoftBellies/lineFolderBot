@@ -58,5 +58,12 @@ La seconde face est le coté composants.
 
 ![photo connecteurs pins femelle verso](doc/connnecteurspinFelemmeBack.jpg)
 
+### La piste 5V et le Ground
+
+Afin de vous faire la main avec les soudures, Faites tout le circuit 5V:
+
+* En faisant en sorte que la continuité soit respectée.
+* Sans déborder sur les pastilles d'à coté
+
 
 
