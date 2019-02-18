@@ -33,8 +33,14 @@ Grâce à cette carte pouvoir "lire" les valeurs des capteurs de luminosité, et
 #### déclenchement d'un moteur
 
 
-## Fabriquer le robot
+## Fabriquer le circuit imprimé du robot
 
-### Souder et desouder
+Voici le shéma global:
 
-### Créer le circuit
+![Shema](electronics/robot-soudure-composants-v2.svg)
+
+
+
+
+
+
