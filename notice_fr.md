@@ -60,10 +60,16 @@ La seconde face est le coté composants.
 
 ### La piste 5V et le Ground
 
-Afin de vous faire la main avec les soudures, Faites tout le circuit 5V:
+Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en rouge):
 
 * En faisant en sorte que la continuité soit respectée.
-* Sans déborder sur les pastilles d'à coté
+* Sans déborder sur les pastilles d'à coté.
+
+![5V](electronics/robot-soudure-composants-v2-5V.svg)
+
+### Souder quelques composants
+
+
 
 
 
