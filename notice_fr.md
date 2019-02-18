@@ -69,7 +69,10 @@ Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en roug
 
 ### Souder quelques composants
 
+* Coté composants de la plaque, placer ces trois résistances:
 
+![resistances](electronics/robot-soudure-composants-v2-3-resistances.svg)
 
+* Coté circuit, mettre un point de soudure sur les pates des résistances pour les fixer (points marqués en rouge).
 
-
+![resistances](electronics/robot-soudure-composants-v2-3-resistances-verso.svg)
