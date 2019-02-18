@@ -40,7 +40,23 @@ Voici le shéma global:
 ![Shema](electronics/robot-soudure-composants-v2.svg)
 
 
+La première face correspond aux pistes à créer sur la plaque à pastille.
 
+La seconde face est le coté composants.
+
+
+### Les connecteurs femelles qui recevront l'arduino
+
+* Prendre 2 rangées de connecteurs Pin femelles.
+* Avec une pince coupante, les couper au milieu de la 16ème PIN, de façon à ce que 15 pins soient utilisables
+
+* les places sur la plaque de prototypage
+
+![photo connecteurs pins femelle](doc/connecteurspinFemelle.jpg)
+
+* Souder chaque points des connecteurs:
+
+![photo connecteurs pins femelle verso](doc/connnecteurspinFelemmeBack.jpg)
 
 
 
