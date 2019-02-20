@@ -88,4 +88,13 @@ Le port USB doit etre sur la face opposée aux broches.
 
 ## Fils  avec connecteurs dupont sur les moteurs
 
-Coupez 
+Coupez Un cable avec connecteurs Dupont male, dénudez-le et soudez le sur les connecteurs du moteur. Comme ceci:
+
+![motor](doc/motor.jpg)
+
+Longueur du fil, avec le connecteur: env 7cm
+
+
+
+## Tout assembler
+
