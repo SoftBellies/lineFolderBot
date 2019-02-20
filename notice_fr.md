@@ -1,40 +1,5 @@
 # Notice de montage du robot suiveur de ligne
 
-## Principes
-
-### Détection de la ligne
-
-Un sol clair reflète plus la lumière qu'un sol sombre.
-
-En disposant de cette manière, deux LED et deux photoristances:
-
-![schema de principe](doc/principe.png)
-
-La valeur de chaque photoresistance dépend de la quantité de lumière reflétée par le sol.
-
-Sur le schéma ci dessus la lecture des valeurs des photorésistances permettrait de déduire que celle de droite est au dessus d'une ligne noire. Tandis que celle de gauche est au dessus d'une zone claire.
-
-Le robot dérive donc vers la droite de la ligne. Il faut le faire tourner à gauche
-
-### Actionner les moteurs en fonction des valeurs du capteur.
-
-#### Présentation de l'arduino
-
-![Arduino Nano](doc/arduino.jpg)
-
-L'arduino est un circuit électronique programmable pouvant "lire des valeurs" via certaines pins, et déclencher des courants électriques via d'autres pins.
-
-Grâce à cette carte pouvoir "lire" les valeurs des capteurs de luminosité, et notre programme, en fonction de ces valeurs actionnera ou non l'envoi d'une tension électrique dans les moteurs.
-
-#### Lecture d'une valeur
-
-
-
-#### déclenchement d'un moteur
-
-
-## Fabriquer le circuit imprimé du robot
-
 Voici le shéma global:
 
 ![Shema](electronics/robot-soudure-composants-v2.svg)
@@ -45,7 +10,7 @@ La première face correspond aux pistes à créer sur la plaque à pastille.
 La seconde face est le coté composants.
 
 
-### Les connecteurs femelles qui recevront l'arduino
+## Les connecteurs femelles qui recevront l'arduino
 
 * Prendre 2 rangées de connecteurs Pin femelles.
 * Avec une pince coupante, les couper au milieu de la 16ème PIN, de façon à ce que 15 pins soient utilisables
@@ -58,7 +23,7 @@ La seconde face est le coté composants.
 
 ![photo connecteurs pins femelle verso](doc/connnecteurspinFelemmeBack.jpg)
 
-### La piste 5V et le Ground
+## La piste 5V et le Ground
 
 Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en rouge):
 
@@ -67,7 +32,7 @@ Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en roug
 
 ![5V](electronics/robot-soudure-composants-v2-5V.svg)
 
-### Souder quelques composants
+## Souder quelques composants
 
 * Coté composants de la plaque, placer ces trois résistances:
 
@@ -76,3 +41,8 @@ Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en roug
 * Coté circuit, mettre un point de soudure sur les pates des résistances pour les fixer (points marqués en rouge).
 
 ![resistances](electronics/robot-soudure-composants-v2-3-resistances-verso.svg)
+
+* Raccorder ces résistances à la masse de l'arduino 
+
+
+
