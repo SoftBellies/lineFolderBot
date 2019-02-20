@@ -25,7 +25,7 @@ La seconde face est le coté composants.
 
 ![photo connecteurs pins femelle verso](doc/connnecteurspinFelemmeBack.jpg)
 
-###La piste 5V et le Ground
+### La piste de masse
 
 Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en rouge):
 
@@ -61,6 +61,13 @@ Voila, vous avez compris, il faut placer les composants un par un, les souder et
 Le pas à pas s'arrète ici car c'est fastidieux à écrire. Continuez composant par composant, goute d'étain goute d'étain.
 
 Quelques subtilités cependant pour la suite:
+
+#### Certains composants ont sont polarisés:
+
+* Les leds. Sur le schéma, les leds sont représentées vue de dessus. Le coté ayant un plat y est représenté. Disposez la led sur votre circuit dans le même sens que sur le schéma.
+* Les diodes. Une bande noire est représentée sur les diodes sur le schéma. Cette bande noire existe réellement sur les diodes. Placez lez dans le même sens qu'ildiqué sur le schéma.
+* Les transistors
+
 
 #### le capteur doit froler le sol
 Les LEDS et les photoresistances du capteur de ligne doivent être soudées de facon:
