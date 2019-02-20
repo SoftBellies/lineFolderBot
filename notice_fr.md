@@ -95,6 +95,24 @@ Coupez Un cable avec connecteurs Dupont male, dénudez-le et soudez le sur les c
 Longueur du fil, avec le connecteur: env 7cm
 
 
-
 ## Tout assembler
 
+Si nécessaire, contre percez les trous dans le chassis et la plaque de prototypage.
+
+Quelques coups de tourne-vis et vous aurez votre robot.
+
+Il faut faire en sorte que les capteurs soient très près du sol.
+
+![robot](doc/P_20190220_230656.jpg)
+
+## Injecter le code dans l'arduino.
+
+Il faut programmer l'arduino.
+
+L'installation de l'environnement Arduino est expliquée sur le site officiel. https://www.arduino.cc/
+
+Le programme servant à faire fonctionner le robot suiveur de ligne  peut être téléchargée sur la plateforme git du hackerspace:
+
+https://git.ventresmous.fr/VentresMous/lineFollowerBot/src/master/lineFollowerBot/lineFollowerBot.ino
+
+Nous vous détaillerons ces manipulations durant l'atelier.
