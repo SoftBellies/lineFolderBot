@@ -62,7 +62,7 @@ Le pas à pas s'arrète ici car c'est fastidieux à écrire. Continuez composant
 
 Quelques subtilités cependant pour la suite:
 
-#### Certains composants ont sont polarisés:
+#### Certains composants sont polarisés:
 
 * Les LEDs; Sur le schéma, elles sont représentées vue de dessus. Le côté ayant un plat y est représenté. Disposez la LED sur votre circuit dans le même sens que sur le schéma.
 * Les diodes; Un anneau noir est dessiné sur les diodes. Disposez-les en respectant le côté de l'anneau.
