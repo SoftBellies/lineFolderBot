@@ -2,26 +2,26 @@
 
 ## Circuit électronique
 
-Voici le shéma global:
+Voici le shéma global :
 
 ![Shema](electronics/robot-soudure-composants-v2.svg)
 
 
-La première face correspond aux pistes à créer sur la plaque à pastille.
+La première face correspond aux pistes à créer sur la plaque à pastilles.
 
-La seconde face est le coté composants.
+La seconde face est le côté composants.
 
 
 ### Les connecteurs femelles qui recevront l'arduino
 
 * Prendre 2 rangées de connecteurs Pin femelles.
-* Avec une pince coupante, les couper au milieu de la 16ème PIN, de façon à ce que 15 pins soient utilisables
+* Avec une pince coupante, les couper au milieu de la 16ème PIN, de façon à ce que 15 pins soient utilisables.
 
-* les placer sur la plaque de prototypage
+* Les placer sur la plaque de prototypage.
 
 ![photo connecteurs pins femelle](doc/connecteurspinFemelle.jpg)
 
-* Coté circuit, souder chaque pin:
+* Côté circuit, souder chaque pin:
 
 ![photo connecteurs pins femelle verso](doc/connnecteurspinFelemmeBack.jpg)
 
@@ -30,7 +30,7 @@ La seconde face est le coté composants.
 Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en rouge):
 
 * En faisant en sorte que la continuité soit respectée.
-* Sans déborder sur les pastilles d'à coté.
+* Sans déborder sur les pastilles d'à côté.
 
 ![5V](electronics/robot-soudure-composants-v2-5V.svg)
 
@@ -40,7 +40,7 @@ Afin de vous faire la main avec les soudures, Faites tout le circuit 5V (en roug
 
 ![resistances](electronics/robot-soudure-composants-v2-3-resistances.svg)
 
-* Coté circuit, mettre un point de soudure sur les pates des résistances pour les fixer (points marqués en rouge).
+* Coté circuit, mettre un point de soudure sur les pattes des résistances pour les fixer (points marqués en rouge).
 
 ![resistances](electronics/robot-soudure-composants-v2-3-resistances-verso.svg)
 
@@ -54,25 +54,25 @@ Raccorder deux de ces résistances aux pins de l'arduino:
 
 ![resistances](/electronics/robot-soudure-composants-v2-3-resistances-verso-arduino.svg)
 
-### Continuez!
+### Continuez !
 
 Voila, vous avez compris, il faut placer les composants un par un, les souder et faire les lignes d'étain pour les relier conformément au circuit.
 
-Le pas à pas s'arrète ici car c'est fastidieux à écrire. Continuez composant par composant, goute d'étain goute d'étain.
+Le pas à pas s'arrète ici car c'est fastidieux à écrire. Continuez composant par composant, goute d'étain par goute d'étain.
 
 Quelques subtilités cependant pour la suite:
 
 #### Certains composants ont sont polarisés:
 
-* Les leds. Sur le schéma, les leds sont représentées vue de dessus. Le coté ayant un plat y est représenté. Disposez la led sur votre circuit dans le même sens que sur le schéma.
-* Les diodes. Une bande noire est représentée sur les diodes sur le schéma. Cette bande noire existe réellement sur les diodes. Placez lez dans le même sens qu'ildiqué sur le schéma.
+* Les LEDs; Sur le schéma, elles sont représentées vue de dessus. Le côté ayant un plat y est représenté. Disposez la LED sur votre circuit dans le même sens que sur le schéma.
+* Les diodes; Un anneau noir est dessiné sur les diodes. Disposez-les en respectant le côté de l'anneau.
 * Les transistors
 
 
 #### le capteur doit froler le sol
-Les LEDS et les photoresistances du capteur de ligne doivent être soudées de facon:
+Les LEDS et les photoresistances du capteur de ligne doivent être soudées de façon:
 * la photoresistance doit être le plus près possible du sol
-* La led ne doit pas éclairer directement la photoresistance, ses pates doivent etre plus courtes.
+* La led ne doit pas éclairer directement la photoresistance, ses pattes doivent être plus courtes.
 
 Comme ceci:
 
@@ -81,7 +81,7 @@ Comme ceci:
 
 #### Composants sur l'autre face
 
-Les Leds de Debugage doivent etre coté circuit de la plaque, et non du même coté que les autres composants, afin qu'à la fin elles se retouvent au dessus du circuit.
+Les Leds de Debugage doivent être côté circuit de la plaque, et non du même côté que les autres composants, afin qu'à la fin elles se retouvent au dessus du circuit.
 
 
 ## Arduino
@@ -93,18 +93,18 @@ Le port USB doit etre sur la face opposée aux broches.
 
 ![arduino](doc/arduino2.jpg)
 
-## Fils  avec connecteurs dupont sur les moteurs
+## Fils  avec connecteurs Dupont sur les moteurs
 
-Coupez Un cable avec connecteurs Dupont male, dénudez-le et soudez le sur les connecteurs du moteur. Comme ceci:
+Coupez un cable avec connecteurs Dupont male, dénudez-le et soudez-le sur les connecteurs du moteur. Comme ceci:
 
 ![motor](doc/motor.jpg)
 
-Longueur du fil, avec le connecteur: env 7cm
+Longueur du fil, avec le connecteur: env. 7cm
 
 
 ## Tout assembler
 
-Si nécessaire, contre percez les trous dans le chassis et la plaque de prototypage.
+Si nécessaire, contre-percez les trous dans le chassis et la plaque de prototypage.
 
 Quelques coups de tourne-vis et vous aurez votre robot.
 
@@ -118,7 +118,7 @@ Il faut programmer l'arduino.
 
 L'installation de l'environnement Arduino est expliquée sur le site officiel. https://www.arduino.cc/
 
-Le programme servant à faire fonctionner le robot suiveur de ligne  peut être téléchargée sur la plateforme git du hackerspace:
+Le programme servant à faire fonctionner le robot suiveur de ligne  peut être téléchargée sur la plateforme Gogs (git) du hackerspace:
 
 https://git.ventresmous.fr/VentresMous/lineFollowerBot/src/master/lineFollowerBot/lineFollowerBot.ino
 
