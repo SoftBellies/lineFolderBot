@@ -88,7 +88,7 @@ Les Leds de Debugage doivent être côté circuit de la plaque, et non du même 
 
 Il faut souder les broches de l'arduino:
 
-Le port USB doit etre sur la face opposée aux broches.
+Le port USB doit être sur la face opposée aux broches.
 
 
 ![arduino](doc/arduino2.jpg)
