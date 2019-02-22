@@ -58,7 +58,7 @@ Raccorder deux de ces résistances aux pins de l'arduino:
 
 Voila, vous avez compris, il faut placer les composants un par un, les souder et faire les lignes d'étain pour les relier conformément au circuit.
 
-Le pas à pas s'arrète ici car c'est fastidieux à écrire. Continuez composant par composant, goute d'étain par goute d'étain.
+Le pas à pas s'arrête ici car c'est fastidieux à écrire. Continuez composant par composant, goutte d'étain par goutte d'étain.
 
 Quelques subtilités cependant pour la suite:
 
@@ -104,7 +104,7 @@ Longueur du fil, avec le connecteur: env. 7cm
 
 ## Tout assembler
 
-Si nécessaire, contre-percez les trous dans le chassis et la plaque de prototypage.
+Si nécessaire, contre-percez les trous dans le châssis et la plaque de prototypage.
 
 Quelques coups de tourne-vis et vous aurez votre robot.
 
