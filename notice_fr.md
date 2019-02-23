@@ -1,5 +1,18 @@
 # Notice de montage du robot suiveur de ligne
 
+
+
+| Element       |     Quantité / notes      |        Image |
+| :------------ | :-------------: | -------------: |
+| Chassis (impression 3D)       |    1     | ![chassis](chassis/chassis.png)|
+|Roue arrière (impression 3D)|1|![roue](chassis/roue.png)|
+|Plaque de prototypage à pastilles 5X7 CM|1|![chassis](doc/plaque-a-pastilles.jpg)
+|kit Roues + moteur 5VDC|2|![Kit roues et moteur](doc/kit-roue-moteur.jpg)
+
+
+
+
+
 ## Circuit électronique
 
 Voici le shéma global :
