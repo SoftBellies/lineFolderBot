@@ -8,6 +8,8 @@
 |Roue arrière (impression 3D)|1|![roue](chassis/roue.png)|
 |Plaque de prototypage à pastilles 5X7 CM|1|![chassis](doc/plaque-a-pastilles.jpg)
 |kit Roues + moteur 5VDC|2|![Kit roues et moteur](doc/kit-roue-moteur.jpg)
+|Photo résistances| 2 | ![photoresistance](doc/photoresistance.jpeg)|
+|Diodes| 2 | ![diodes](doc/diode.jpg)|
 
 
 
