@@ -10,8 +10,9 @@
 |kit Roues + moteur 5VDC|2|![Kit roues et moteur](doc/kit-roue-moteur.jpg)
 |Photo résistances| 2 | ![photoresistance](doc/photoresistance.jpeg)|
 |Diodes| 2 | ![diodes](doc/diode.jpg)|
-
-
+|Transistor TIP 122| 2 | ![TIP122](doc/TIP122.jpeg)|
+|Leds| 4 | ![leds](doc/led.jpeg)|
+|Ligne connecteur broche femelle| 2x 15 + 2x2 |![connecteurs broches femelle](doc/Connecteur-broches-femelles.jpg)|
 
 
 
