@@ -15,7 +15,7 @@
 // Broches sur lesquelles les moteurs sont connectés.
 // Ce sont des broches de sortie numériques.
 #define MOTEUR_GAUCHE 2
-#define MOTEUR_DROITE 3
+#define MOTEUR_DROITE 8
 
 // Broches sur lesquelles les capteurs sont connectés.
 // Ce sont des broches de lecture analogique.
@@ -34,6 +34,7 @@
 // Les 2 états possible du bouton d’étalonnage : pressé et relevé.
 #define BOUTON_PRESSE 1
 #define BOUTON_RELEVE 0
+
 
 // Variables utilisées pour définir les seuils de détection des capteurs. Les
 // seuils sont réglés à 200 par défaut.
@@ -68,6 +69,7 @@ void setup() {
 
   // Les broches analogiques des capteurs sont obligatoirement en mode lecture
   // analogique. Il n’y a donc pas de réglage à faire sur ces broches.
+  Serial.begin(9600);
 }
 
 // =============================================================================
@@ -142,6 +144,7 @@ void etalonnage() {
   // L’étalonnage est déclenché quand l’utilisateur appuie sur le bouton
   // d’étalonnage. On attend que le bouton soit relaché pour étalonner.
   continuer_si(BOUTON_RELEVE);
+  Serial.println("BOUTON_RELEVE");
 
   // Lit l’état des deux capteurs.
   min_gauche = analogRead(CAPTEUR_GAUCHE);
@@ -153,6 +156,7 @@ void etalonnage() {
   // Attend que l’utilisateur clique sur le bouton (clic = appui + relache).
   continuer_si(BOUTON_PRESSE);
   continuer_si(BOUTON_RELEVE);
+  Serial.println("BOUTON_PRESSE_RELEVE");
 
   // Lit l’état des deux capteurs.
   max_gauche = analogRead(CAPTEUR_GAUCHE);
@@ -162,6 +166,7 @@ void etalonnage() {
   // maximales que le capteur retourne.
   seuil_gauche = (min_gauche + max_gauche) / 2;
   seuil_droite = (min_droite + max_droite) / 2;
+  Serial.println("FIN_ETALONNAGE");
 
   clignoter();
 }
@@ -174,6 +179,7 @@ void etalonnage() {
 
 // Arrête les deux moteurs. Le robot ne bouge plus.
 void moteur_arret() {
+  Serial.println("ARRET_MOTEUR");
   digitalWrite(MOTEUR_GAUCHE, LOW);
   digitalWrite(MOTEUR_DROITE, LOW);
 }
@@ -182,6 +188,8 @@ void moteur_arret() {
 void moteur_droite() {
   // Pour tourner à droite, on bloque le côté droit et on fait avancer le côté
   // gauche.
+  Serial.println("MOTEUR_DROITE");
+
   digitalWrite(MOTEUR_GAUCHE,HIGH);
   digitalWrite(MOTEUR_DROITE,LOW);
 }
@@ -190,12 +198,14 @@ void moteur_droite() {
 void moteur_gauche() {
   // Pour tourner à gauche, on bloque le côté gauche et on fait avancer le côté
   // droit.
+  Serial.println("MOTEUR_GAUCHE");
   digitalWrite(MOTEUR_GAUCHE, LOW);
   digitalWrite(MOTEUR_DROITE, HIGH);
 }
 
 // Fait tourner les deux moteurs. Le robot avance.
 void moteur_avance() {
+  Serial.println("MOTEUR_AVANCE");
   digitalWrite(MOTEUR_GAUCHE, HIGH);
   digitalWrite(MOTEUR_DROITE, HIGH);
 }
