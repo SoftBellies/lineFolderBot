@@ -225,7 +225,9 @@ void loop() {
   int valeur_droite;
 
   // Si le bouton d’étalonnage est pressé, on lance l’étalonnage.
-  if(digitalRead(ETALONNAGE_BOUTON) == 1) etalonnage();
+  if(digitalRead(ETALONNAGE_BOUTON) == 1){ 
+    etalonnage();
+  }
 
   // Lit l’état des deux capteurs.
   valeur_gauche = analogRead(CAPTEUR_GAUCHE);
@@ -245,7 +247,13 @@ void loop() {
     moteur_droite();
 
     // Attend que le capteur de droite identifie le sol.
-    while(analogRead(CAPTEUR_DROITE) > seuil_droite) delay(1);
+    while(analogRead(CAPTEUR_DROITE) > seuil_droite){
+      if(digitalRead(ETALONNAGE_BOUTON) == 1){ 
+        etalonnage(); 
+        break;
+      }
+      delay(1);
+    } 
 
     return;
   }
@@ -258,14 +266,19 @@ void loop() {
     moteur_gauche();
 
     // Attend que le capteur de gauche identifie le sol.
-    while(analogRead(CAPTEUR_GAUCHE) > seuil_gauche) delay(1);
-
+    while(analogRead(CAPTEUR_GAUCHE) > seuil_gauche){
+      if(digitalRead(ETALONNAGE_BOUTON) == 1){ 
+        etalonnage(); 
+        break;
+      }
+      delay(1);
+    }
     return;
   }
 
   // Arrête le robot si les deux capteurs identifient chacun le sol. Cela veut
   // dire que le robot a perdu la ligne, il est plus prudent de l’arrêter.
-  if((valeur_gauche > seuil_gauche) && (valeur_droite > seuil_droite)) {
+  if((valeur_gauche > seuil_gauche) && (valeur_droite > seuil_droite)) { 
     moteur_arret();
     return;
   }
